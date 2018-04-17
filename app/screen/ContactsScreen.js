@@ -52,16 +52,11 @@ class ContactsScreen extends Component {
         return (
             <ScrollView>
                 <Header>
-                    <Left>
-                        <Button transparent onPress={() => { this.onGoToBack() }}>
-                            <Icon name='arrow-back'  />
-                        </Button>
-                    </Left>
                     <Body>
                         <Title>Contact list</Title>
                     </Body>
                     <Right>
-                        <Button transparent onPress={() => { Actions.pop()}}>
+                        <Button transparent onPress={() => { Actions.addContact()}}>
                             <Icon name="add"/>
                         </Button>
                     </Right>

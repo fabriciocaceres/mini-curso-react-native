@@ -1,4 +1,7 @@
-import { CONTACT_LOAD_STATE, CONTACT_ADD_CONTACT } from "./ContactsAction";
+import { 
+    CONTACT_LOAD_STATE, 
+    CONTACT_ADD_CONTACT 
+} from "./ContactsAction";
  
 const INITIAL_STATE = { 
     contactList : [], 
@@ -14,7 +17,6 @@ export default (state = INITIAL_STATE, action) => {
                 contactList: action.contactList 
             };
         case CONTACT_ADD_CONTACT: 
-            console.log(action);
             return {
                 ...state,
                 ...action.payload

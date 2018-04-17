@@ -5,8 +5,6 @@ import { Root } from 'native-base';
 import store from './Store';
 import Router from './Router';
 
-import ContactsScreen from './screen/ContactsScreen';
-
 export default class App extends Component {
 		
 	render() {

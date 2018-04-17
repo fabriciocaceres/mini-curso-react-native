@@ -42,7 +42,6 @@ export const ContactsAddContact = (contact) => {
             console.error(error);
         }
 
-
         dispatch({
             type: CONTACT_ADD_CONTACT,
             payload:{
