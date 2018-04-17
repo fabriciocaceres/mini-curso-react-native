@@ -28,7 +28,7 @@ class ContactsScreen extends Component {
     onContactsAddContact() {
         let contact = {
             name: "Contact"+ Date.now(),
-            photo: Math.random()
+            photo: Math.random()+""
         }
 
         this.props.ContactsAddContact(contact);
