@@ -7,6 +7,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Alert, ScrollView, ListView } from 'react-native';
 import { Container, Header, Content, Button, Text, Body, Left, Right, Title, Icon } from 'native-base';
+import { Actions } from 'react-native-router-flux';
 
 import { connect  } from 'react-redux';
 
@@ -51,11 +52,16 @@ class ContactsScreen extends Component {
         return (
             <ScrollView>
                 <Header>
+                    <Left>
+                        <Button transparent onPress={() => { this.onGoToBack() }}>
+                            <Icon name='arrow-back'  />
+                        </Button>
+                    </Left>
                     <Body>
                         <Title>Contact list</Title>
                     </Body>
                     <Right>
-                        <Button onPress={this.onContactsAddContact.bind(this)}>
+                        <Button transparent onPress={() => { Actions.pop()}}>
                             <Icon name="add"/>
                         </Button>
                     </Right>
